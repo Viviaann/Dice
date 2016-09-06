@@ -4,7 +4,8 @@ void setup()
 }
 void draw()
 {
-	//your code here
+	background(0,204,102);
+	Die.show();
 }
 void mousePressed()
 {
