@@ -13,11 +13,12 @@ void draw()
 		Die one= new Die(x,200);
 		one.show();
 		one.roll();
+	}
 	for (int y=20; y<350; y= y+ 60)
 	{
-		Die one= new Die(200,y);
-		one.show();
-		one.roll();
+		Die two= new Die(320,y);
+		two.show();
+		two.roll();
 	}		
 	
 
@@ -65,8 +66,31 @@ class Die //models one single dice cube
 		{
 			fill(0,0,0);
 			ellipse (myX + 70/4,myY+80/4,5,5);
-			ellipse (myX + 100/4,myY+ 150/4,5,5);
-			ellipse (myX + 130/4,myY+  80/4,5,5);
+			ellipse (myX + 130/4,myY+ 80/4,5,5);
+			ellipse (myX + 100/4,myY+ 140/4,5,5);
+
+		}
+		else if (dots == 4)
+		{
+			fill(0,0,0);
+			ellipse (myX + 50/3,myY+50/3,5,5);
+			ellipse (myX + 50/3,myY+ 100/3,5,5);
+			ellipse (myX + 100/3,myY+ 50/3,5,5);
+			ellipse (myX + 100/3,myY+ 100/3,5,5);
+
+		}
+		else if (dots == 5)
+		{
+			fill(0,0,0);
+			ellipse (myX + 70/4,myY+80/4,5,5);
+			ellipse (myX + 130/4,myY+ 80/4,5,5);
+
+		}
+		else if (dots == 3)
+		{
+			fill(0,0,0);
+			ellipse (myX + 70/4,myY+80/4,5,5);
+			ellipse (myX + 130/4,myY+ 80/4,5,5);
 
 		}
 	}	
