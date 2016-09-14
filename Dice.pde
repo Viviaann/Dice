@@ -17,13 +17,15 @@ void draw()
 		Die two= new Die(x,y);
 		two.show();
 		two.roll();
-		for (two.dots < 5)
+		if (two.dots <= 5)
 		{
 			numDots= numDots + two.dots;
 		}
+	}		
 	}
-	text(" Sum of Dots = ", numDots, 300, 400);		
-	}
+	textSize(30);
+	text(" Sum of Dots = " + numDots, 200, 450);
+	
 
 }
 void mousePressed()
